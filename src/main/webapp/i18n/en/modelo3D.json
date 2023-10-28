@@ -1,0 +1,26 @@
+{
+  "gestionPedidosApp": {
+    "modelo3D": {
+      "home": {
+        "title": "Modelo 3 DS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Modelo 3 D",
+        "createOrEditLabel": "Create or edit a Modelo 3 D",
+        "notFound": "No Modelo 3 DS found"
+      },
+      "created": "A new Modelo 3 D is created with identifier { param }",
+      "updated": "A Modelo 3 D is updated with identifier { param }",
+      "deleted": "A Modelo 3 D is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Modelo 3 D { id }?"
+      },
+      "detail": {
+        "title": "Modelo 3 D"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "archivo": "Archivo",
+      "descripcion": "Descripcion"
+    }
+  }
+}

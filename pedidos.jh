@@ -1,0 +1,35 @@
+entity Cliente {
+    nombre String required,
+    email String required,
+    telefono String
+}
+
+entity Modelo3D {
+    nombre String required,
+    archivo String required,
+    descripcion TextBlob
+}
+
+entity Pedido {
+    fechaCreacion LocalDate required,
+    fechaEntrega LocalDate,
+    estado EstadoPedido required,
+    detalles String
+}
+
+enum EstadoPedido {
+    PENDIENTE, IMPRIMIENDO, COMPLETADO, CANCELADO
+}
+
+relationship OneToMany {
+    Cliente{pedido} to Pedido{cliente(nombre) required}
+}
+
+relationship ManyToOne {
+    Pedido{modelo3d} to Modelo3D
+}
+
+paginate Pedido, Cliente, Modelo3D with pagination
+service Pedido, Cliente, Modelo3D with serviceClass
+
+dto Pedido, Cliente, Modelo3D with mapstruct

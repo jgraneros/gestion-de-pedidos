@@ -1,0 +1,11 @@
+id;fecha_creacion;fecha_entrega;estado;detalles;cliente_id
+1;2023-10-28;2023-10-28;IMPRIMIENDO;legitimate an lollipop;1
+2;2023-10-27;2023-10-27;PENDIENTE;revamp;2
+3;2023-10-27;2023-10-28;IMPRIMIENDO;drat weakly dearly;3
+4;2023-10-27;2023-10-28;PENDIENTE;content puny poll;4
+5;2023-10-28;2023-10-28;IMPRIMIENDO;steward;5
+6;2023-10-28;2023-10-28;COMPLETADO;condone oof;6
+7;2023-10-27;2023-10-27;CANCELADO;conserve;7
+8;2023-10-27;2023-10-27;CANCELADO;bossy inasmuch;8
+9;2023-10-27;2023-10-27;COMPLETADO;ultimately killer so;9
+10;2023-10-27;2023-10-28;CANCELADO;controller hospitalization;10
