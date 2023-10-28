@@ -48,6 +48,10 @@ public class CacheConfiguration {
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.Authority.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName() + ".authorities");
+            createCache(cm, ar.com.threedland.pedidos.domain.Cliente.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Cliente.class.getName() + ".pedidos");
+            createCache(cm, ar.com.threedland.pedidos.domain.Modelo3D.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Pedido.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

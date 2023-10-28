@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131304",
+  "dto": "mapstruct",
+  "entityTableName": "pedido",
+  "fields": [
+    {
+      "fieldName": "fechaCreacion",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaEntrega",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "EstadoPedido",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "PENDIENTE,IMPRIMIENDO,COMPLETADO,CANCELADO"
+    },
+    {
+      "fieldName": "detalles",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Pedido",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "modelo3D",
+      "relationshipName": "modelo3d",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "pedido",
+      "relationshipName": "cliente",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,11 @@
+{
+  "gestionPedidosApp": {
+    "EstadoPedido": {
+      "null": "",
+      "PENDIENTE": "PENDIENTE",
+      "IMPRIMIENDO": "IMPRIMIENDO",
+      "COMPLETADO": "COMPLETADO",
+      "CANCELADO": "CANCELADO"
+    }
+  }
+}

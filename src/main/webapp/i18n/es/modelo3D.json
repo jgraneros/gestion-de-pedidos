@@ -1,0 +1,26 @@
+{
+  "gestionPedidosApp": {
+    "modelo3D": {
+      "home": {
+        "title": "Modelo 3 DS",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Modelo 3 D",
+        "createOrEditLabel": "Crear o editar Modelo 3 D",
+        "notFound": "Ningún Modelo 3 DS encontrado"
+      },
+      "created": "Un nuevo Modelo 3 D ha sido creado con el identificador { param }",
+      "updated": "Un Modelo 3 D ha sido actualizado con el identificador { param }",
+      "deleted": "Un Modelo 3 D ha sido eliminado con el identificador { param }",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Modelo 3 D { id }?"
+      },
+      "detail": {
+        "title": "Modelo 3 D"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "archivo": "Archivo",
+      "descripcion": "Descripcion"
+    }
+  }
+}
