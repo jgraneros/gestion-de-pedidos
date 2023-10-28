@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.Authority.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName() + ".authorities");
+            createCache(cm, ar.com.threedland.pedidos.domain.Region.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Country.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Location.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Department.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Department.class.getName() + ".employees");
+            createCache(cm, ar.com.threedland.pedidos.domain.Task.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Task.class.getName() + ".jobs");
+            createCache(cm, ar.com.threedland.pedidos.domain.Employee.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, ar.com.threedland.pedidos.domain.Job.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Job.class.getName() + ".tasks");
+            createCache(cm, ar.com.threedland.pedidos.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
