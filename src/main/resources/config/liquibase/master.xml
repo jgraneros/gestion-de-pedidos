@@ -17,7 +17,18 @@
     <property name="datetimeType" value="datetime(6)" dbms="mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131104_added_entity_CostoPrducto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131204_added_entity_EstadoPedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131304_added_entity_Cliente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131404_added_entity_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131504_added_entity_DetallePedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131604_added_entity_Producto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131704_added_entity_TipoMerchandise.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20231028131204_added_entity_constraints_EstadoPedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131404_added_entity_constraints_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131504_added_entity_constraints_DetallePedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231028131604_added_entity_constraints_Producto.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
