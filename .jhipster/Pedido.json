@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131404",
+  "entityTableName": "pedido",
+  "fields": [
+    {
+      "fieldName": "numeroPedido",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "costoTotal",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "precioVenta",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "gananciaTotal",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "Pedido",
+  "relationships": [
+    {
+      "otherEntityName": "detallePedido",
+      "otherEntityRelationshipName": "pedido",
+      "relationshipName": "detallePedido",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "estadoPedido",
+      "otherEntityRelationshipName": "pedido",
+      "relationshipName": "estadoPedido",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cliente",
+      "relationshipName": "cliente",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
