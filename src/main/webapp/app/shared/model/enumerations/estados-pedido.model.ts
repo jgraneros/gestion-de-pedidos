@@ -1,0 +1,7 @@
+export enum EstadosPedido {
+  PENDIENTE = 'PENDIENTE',
+
+  COMPLETADO = 'COMPLETADO',
+
+  RECHAZADO = 'RECHAZADO',
+}

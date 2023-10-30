@@ -1,0 +1,18 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131504",
+  "entityTableName": "detalle_pedido",
+  "fields": [
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "subTotalCosto",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "DetallePedido",
+  "relationships": [],
+  "searchEngine": "no"
+}

@@ -1,0 +1,27 @@
+{
+  "gestionPedidosApp": {
+    "costoPrducto": {
+      "home": {
+        "title": "Costo Prductos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Costo Prducto",
+        "createOrEditLabel": "Crear o editar Costo Prducto",
+        "notFound": "Ningún Costo Prductos encontrado"
+      },
+      "created": "Un nuevo Costo Prducto ha sido creado con el identificador { param }",
+      "updated": "Un Costo Prducto ha sido actualizado con el identificador { param }",
+      "deleted": "Un Costo Prducto ha sido eliminado con el identificador { param }",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Costo Prducto { id }?"
+      },
+      "detail": {
+        "title": "Costo Prducto"
+      },
+      "id": "ID",
+      "costoMaterial": "Costo Material",
+      "costosAgregados": "Costos Agregados",
+      "costoPostImpresion": "Costo Post Impresion",
+      "producto": "Producto"
+    }
+  }
+}
