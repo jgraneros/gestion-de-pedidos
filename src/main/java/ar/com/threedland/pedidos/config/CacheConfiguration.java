@@ -48,6 +48,16 @@ public class CacheConfiguration {
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.Authority.class.getName());
             createCache(cm, ar.com.threedland.pedidos.domain.User.class.getName() + ".authorities");
+            createCache(cm, ar.com.threedland.pedidos.domain.CostoPrducto.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.EstadoPedido.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Cliente.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Cliente.class.getName() + ".clientes");
+            createCache(cm, ar.com.threedland.pedidos.domain.Pedido.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Pedido.class.getName() + ".pedidos");
+            createCache(cm, ar.com.threedland.pedidos.domain.DetallePedido.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Producto.class.getName());
+            createCache(cm, ar.com.threedland.pedidos.domain.Producto.class.getName() + ".productos");
+            createCache(cm, ar.com.threedland.pedidos.domain.TipoMerchandise.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
