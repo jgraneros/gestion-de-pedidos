@@ -1,0 +1,25 @@
+{
+  "gestionPedidosApp": {
+    "estadoPedido": {
+      "home": {
+        "title": "Estado Pedidos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Estado Pedido",
+        "createOrEditLabel": "Crear o editar Estado Pedido",
+        "notFound": "Ningún Estado Pedidos encontrado"
+      },
+      "created": "Un nuevo Estado Pedido ha sido creado con el identificador { param }",
+      "updated": "Un Estado Pedido ha sido actualizado con el identificador { param }",
+      "deleted": "Un Estado Pedido ha sido eliminado con el identificador { param }",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estado Pedido { id }?"
+      },
+      "detail": {
+        "title": "Estado Pedido"
+      },
+      "id": "ID",
+      "descripcion": "Descripcion",
+      "pedido": "Pedido"
+    }
+  }
+}

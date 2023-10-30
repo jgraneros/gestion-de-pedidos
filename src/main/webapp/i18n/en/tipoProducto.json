@@ -1,0 +1,9 @@
+{
+  "gestionPedidosApp": {
+    "TipoProducto": {
+      "null": "",
+      "MERCHANDISE": "MERCHANDISE",
+      "IMPRESION_PARTICULAR": "IMPRESION_PARTICULAR"
+    }
+  }
+}
