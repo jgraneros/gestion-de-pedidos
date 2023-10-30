@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131204",
+  "entityTableName": "estado_pedido",
+  "fields": [
+    {
+      "fieldName": "descripcion",
+      "fieldType": "EstadosPedido",
+      "fieldValues": "PENDIENTE,COMPLETADO,RECHAZADO"
+    }
+  ],
+  "name": "EstadoPedido",
+  "relationships": [],
+  "searchEngine": "no"
+}
