@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131704",
+  "entityTableName": "tipo_merchandise",
+  "fields": [
+    {
+      "fieldName": "tipo",
+      "fieldType": "Merchandise",
+      "fieldValues": "LLAVEROS,CARTELES"
+    }
+  ],
+  "name": "TipoMerchandise",
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "relationshipName": "producto",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
