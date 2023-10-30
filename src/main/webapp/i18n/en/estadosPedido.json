@@ -1,0 +1,10 @@
+{
+  "gestionPedidosApp": {
+    "EstadosPedido": {
+      "null": "",
+      "PENDIENTE": "PENDIENTE",
+      "COMPLETADO": "COMPLETADO",
+      "RECHAZADO": "RECHAZADO"
+    }
+  }
+}
