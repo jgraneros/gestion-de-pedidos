@@ -1,0 +1,27 @@
+{
+  "gestionPedidosApp": {
+    "detallePedido": {
+      "home": {
+        "title": "Detalle Pedidos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Detalle Pedido",
+        "createOrEditLabel": "Create or edit a Detalle Pedido",
+        "notFound": "No Detalle Pedidos found"
+      },
+      "created": "A new Detalle Pedido is created with identifier { param }",
+      "updated": "A Detalle Pedido is updated with identifier { param }",
+      "deleted": "A Detalle Pedido is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Detalle Pedido { id }?"
+      },
+      "detail": {
+        "title": "Detalle Pedido"
+      },
+      "id": "ID",
+      "cantidad": "Cantidad",
+      "subTotalCosto": "Sub Total Costo",
+      "detalle": "Detalle",
+      "detalle": "Detalle"
+    }
+  }
+}
