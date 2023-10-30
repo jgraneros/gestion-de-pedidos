@@ -1,0 +1,122 @@
+<template>
+  <div>
+    <h2 id="page-heading" data-cy="ProductoHeading">
+      <span v-text="t$('gestionPedidosApp.producto.home.title')" id="producto-heading"></span>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-info mr-2" v-on:click="handleSyncList" :disabled="isFetching">
+          <font-awesome-icon icon="sync" :spin="isFetching"></font-awesome-icon>
+          <span v-text="t$('gestionPedidosApp.producto.home.refreshListLabel')"></span>
+        </button>
+        <router-link :to="{ name: 'ProductoCreate' }" custom v-slot="{ navigate }">
+          <button
+            @click="navigate"
+            id="jh-create-entity"
+            data-cy="entityCreateButton"
+            class="btn btn-primary jh-create-entity create-producto"
+          >
+            <font-awesome-icon icon="plus"></font-awesome-icon>
+            <span v-text="t$('gestionPedidosApp.producto.home.createLabel')"></span>
+          </button>
+        </router-link>
+      </div>
+    </h2>
+    <br />
+    <div class="alert alert-warning" v-if="!isFetching && productos && productos.length === 0">
+      <span v-text="t$('gestionPedidosApp.producto.home.notFound')"></span>
+    </div>
+    <div class="table-responsive" v-if="productos && productos.length > 0">
+      <table class="table table-striped" aria-describedby="productos">
+        <thead>
+          <tr>
+            <th scope="row"><span v-text="t$('global.field.id')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.nombre')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.descripcion')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.peso')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.tipo')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.producto')"></span></th>
+            <th scope="row"><span v-text="t$('gestionPedidosApp.producto.producto')"></span></th>
+            <th scope="row"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="producto in productos" :key="producto.id" data-cy="entityTable">
+            <td>
+              <router-link :to="{ name: 'ProductoView', params: { productoId: producto.id } }">{{ producto.id }}</router-link>
+            </td>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.descripcion }}</td>
+            <td>{{ producto.peso }}</td>
+            <td v-text="t$('gestionPedidosApp.TipoProducto.' + producto.tipo)"></td>
+            <td>
+              <div v-if="producto.producto">
+                <router-link :to="{ name: 'CostoPrductoView', params: { costoPrductoId: producto.producto.id } }">{{
+                  producto.producto.id
+                }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="producto.producto">
+                <router-link :to="{ name: 'TipoMerchandiseView', params: { tipoMerchandiseId: producto.producto.id } }">{{
+                  producto.producto.id
+                }}</router-link>
+              </div>
+            </td>
+            <td class="text-right">
+              <div class="btn-group">
+                <router-link :to="{ name: 'ProductoView', params: { productoId: producto.id } }" custom v-slot="{ navigate }">
+                  <button @click="navigate" class="btn btn-info btn-sm details" data-cy="entityDetailsButton">
+                    <font-awesome-icon icon="eye"></font-awesome-icon>
+                    <span class="d-none d-md-inline" v-text="t$('entity.action.view')"></span>
+                  </button>
+                </router-link>
+                <router-link :to="{ name: 'ProductoEdit', params: { productoId: producto.id } }" custom v-slot="{ navigate }">
+                  <button @click="navigate" class="btn btn-primary btn-sm edit" data-cy="entityEditButton">
+                    <font-awesome-icon icon="pencil-alt"></font-awesome-icon>
+                    <span class="d-none d-md-inline" v-text="t$('entity.action.edit')"></span>
+                  </button>
+                </router-link>
+                <b-button
+                  v-on:click="prepareRemove(producto)"
+                  variant="danger"
+                  class="btn btn-sm"
+                  data-cy="entityDeleteButton"
+                  v-b-modal.removeEntity
+                >
+                  <font-awesome-icon icon="times"></font-awesome-icon>
+                  <span class="d-none d-md-inline" v-text="t$('entity.action.delete')"></span>
+                </b-button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <b-modal ref="removeEntity" id="removeEntity">
+      <template #modal-title>
+        <span
+          id="gestionPedidosApp.producto.delete.question"
+          data-cy="productoDeleteDialogHeading"
+          v-text="t$('entity.delete.title')"
+        ></span>
+      </template>
+      <div class="modal-body">
+        <p id="jhi-delete-producto-heading" v-text="t$('gestionPedidosApp.producto.delete.question', { id: removeId })"></p>
+      </div>
+      <template #modal-footer>
+        <div>
+          <button type="button" class="btn btn-secondary" v-text="t$('entity.action.cancel')" v-on:click="closeDialog()"></button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="jhi-confirm-delete-producto"
+            data-cy="entityConfirmDeleteButton"
+            v-text="t$('entity.action.delete')"
+            v-on:click="removeProducto()"
+          ></button>
+        </div>
+      </template>
+    </b-modal>
+  </div>
+</template>
+
+<script lang="ts" src="./producto.component.ts"></script>

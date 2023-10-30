@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131704",
+  "entityTableName": "tipo_merchandise",
+  "fields": [
+    {
+      "fieldName": "tipo",
+      "fieldType": "Merchandise",
+      "fieldValues": "LLAVEROS,CARTELES"
+    }
+  ],
+  "name": "TipoMerchandise",
+  "relationships": [],
+  "searchEngine": "no"
+}

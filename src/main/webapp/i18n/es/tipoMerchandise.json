@@ -1,0 +1,25 @@
+{
+  "gestionPedidosApp": {
+    "tipoMerchandise": {
+      "home": {
+        "title": "Tipo Merchandises",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Tipo Merchandise",
+        "createOrEditLabel": "Crear o editar Tipo Merchandise",
+        "notFound": "Ningún Tipo Merchandises encontrado"
+      },
+      "created": "Un nuevo Tipo Merchandise ha sido creado con el identificador { param }",
+      "updated": "Un Tipo Merchandise ha sido actualizado con el identificador { param }",
+      "deleted": "Un Tipo Merchandise ha sido eliminado con el identificador { param }",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tipo Merchandise { id }?"
+      },
+      "detail": {
+        "title": "Tipo Merchandise"
+      },
+      "id": "ID",
+      "tipo": "Tipo",
+      "producto": "Producto"
+    }
+  }
+}
