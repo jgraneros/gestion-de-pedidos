@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131504",
+  "entityTableName": "detalle_pedido",
+  "fields": [
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "subTotalCosto",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "DetallePedido",
+  "relationships": [
+    {
+      "otherEntityField": "numeroPedido",
+      "otherEntityName": "pedido",
+      "relationshipName": "pedido",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "producto",
+      "relationshipName": "producto",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "numeroPedido",
+      "otherEntityName": "pedido",
+      "relationshipName": "pedido",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "producto",
+      "relationshipName": "producto",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

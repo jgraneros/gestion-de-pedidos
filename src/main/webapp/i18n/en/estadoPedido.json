@@ -1,0 +1,25 @@
+{
+  "gestionPedidosApp": {
+    "estadoPedido": {
+      "home": {
+        "title": "Estado Pedidos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Estado Pedido",
+        "createOrEditLabel": "Create or edit a Estado Pedido",
+        "notFound": "No Estado Pedidos found"
+      },
+      "created": "A new Estado Pedido is created with identifier { param }",
+      "updated": "A Estado Pedido is updated with identifier { param }",
+      "deleted": "A Estado Pedido is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Estado Pedido { id }?"
+      },
+      "detail": {
+        "title": "Estado Pedido"
+      },
+      "id": "ID",
+      "descripcion": "Descripcion",
+      "pedido": "Pedido"
+    }
+  }
+}
