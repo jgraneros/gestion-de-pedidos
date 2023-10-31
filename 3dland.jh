@@ -1,0 +1,83 @@
+
+
+entity CostoPrducto {
+	costoMaterial Double
+    costosAgregados Double
+    costoPostImpresion Double
+}
+
+entity EstadoPedido {
+	descripcion EstadosPedido
+}
+
+enum EstadosPedido {
+	PENDIENTE
+    COMPLETADO
+    RECHAZADO
+}
+
+entity Cliente {
+	nombre String
+    email String
+    telefono String
+}
+
+entity Pedido {
+  numeroPedido Long
+  costoTotal Double
+  precioVenta Double
+  gananciaTotal Double
+}
+
+entity DetallePedido {
+   cantidad Integer
+   subTotalCosto Double
+}
+
+entity Producto {
+    codigo String
+	nombre String
+    descripcion TextBlob
+    peso Float
+    tipo TipoProducto
+}
+
+entity TipoMerchandise {
+    tipo Merchandise
+}
+
+enum TipoProducto {
+   MERCHANDISE
+   IMPRESION_PARTICULAR
+}
+
+enum Merchandise {
+   LLAVEROS
+   CARTELES
+}
+
+relationship OneToOne {
+	CostoPrducto{producto} to Producto
+}
+
+relationship OneToOne {
+	TipoMerchandise{producto} to Producto
+}
+relationship OneToMany {
+ 	Pedido to DetallePedido{pedido(numeroPedido)}
+    Producto to DetallePedido{producto(codigo)}
+}
+
+relationship OneToMany {
+	Pedido to EstadoPedido{pedido}
+}
+
+relationship OneToMany {
+	Cliente to Pedido{cliente}
+}
+
+
+
+
+
+
