@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131604",
+  "entityTableName": "producto",
+  "fields": [
+    {
+      "fieldName": "codigo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "peso",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "tipo",
+      "fieldType": "TipoProducto",
+      "fieldValues": "MERCHANDISE,IMPRESION_PARTICULAR"
+    }
+  ],
+  "name": "Producto",
+  "relationships": [
+    {
+      "otherEntityName": "detallePedido",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "detallePedido",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}
