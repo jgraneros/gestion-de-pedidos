@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20231028131104",
+  "entityTableName": "costo_prducto",
+  "fields": [
+    {
+      "fieldName": "costoMaterial",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "costosAgregados",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "costoPostImpresion",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "CostoPrducto",
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "relationshipName": "producto",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

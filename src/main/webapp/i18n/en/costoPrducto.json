@@ -1,0 +1,27 @@
+{
+  "gestionPedidosApp": {
+    "costoPrducto": {
+      "home": {
+        "title": "Costo Prductos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Costo Prducto",
+        "createOrEditLabel": "Create or edit a Costo Prducto",
+        "notFound": "No Costo Prductos found"
+      },
+      "created": "A new Costo Prducto is created with identifier { param }",
+      "updated": "A Costo Prducto is updated with identifier { param }",
+      "deleted": "A Costo Prducto is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Costo Prducto { id }?"
+      },
+      "detail": {
+        "title": "Costo Prducto"
+      },
+      "id": "ID",
+      "costoMaterial": "Costo Material",
+      "costosAgregados": "Costos Agregados",
+      "costoPostImpresion": "Costo Post Impresion",
+      "producto": "Producto"
+    }
+  }
+}
